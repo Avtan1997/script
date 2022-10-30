@@ -949,13 +949,14 @@ user123.forEach(user => console.log(user, typeof user))
 //
 // console.log('LOOP IN LOOP')
 //
-// for (let exercise = 1; exercise <= 3; exercise++){
-//   console.log(`Exercise ${exercise}`)
-//
-//   for (let rep= 1; rep <= 5; rep++){
-//     console.log(`Rep ${rep}`)
-//   }
-// }
+for (let exercise = 1; exercise <= 3; exercise++){
+  console.log(`Exercise ${exercise}`)
+
+  for (let rep= 1; rep <= 5; rep++){
+    console.log(`Rep ${rep}`)
+  }
+}
+
 
 
 
