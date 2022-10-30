@@ -35,6 +35,7 @@ letters, numbers, $, _
 // colors.push('blue')
 // console.log(colors)
 
+
 // let x = 'something'
 // console.log(x)
 // x = 3
@@ -177,10 +178,13 @@ letters, numbers, $, _
 // result = firstName + space + lastName
 // result = greeting + space + 'My name is' + space + firstName + space + lastName + space +
 //   ". I'm" + space + age + ' years old.'
+// console.log(result)
+
 
 /**Escaping*/
 // result = 'i\'m 24 years old'
-// result = "I like \"Star wars\" movie" //Бэк слеш \"
+// // result = "I like \"Star wars\" movie" //Бэк слеш \"
+// console.log(result)
 
 /** Properties and methods */
 // result = 'Hello!'.length
@@ -278,8 +282,8 @@ letters, numbers, $, _
 //
 // prompt(' What is your favorite color?')
 // console.log('Your favorite color is' + favoriteColor)
-//=========================================================
-
+// //=========================================================
+//
 // const firstName = prompt('Как вас зовут?')
 // const lastName = prompt('Напишите свою Фамилию?')
 // const age = prompt('Укажите свой возраст?')
@@ -397,9 +401,9 @@ letters, numbers, $, _
 //  console.log(`No, your weight is normal`)
 //  alert(`No, your weight is normal`)
 // }
-
-
-
+//
+//
+//
 // console.log(bodyMassIndex)
 // console.log(areYouOverweight)
 // alert('У вас лишний вес?' + areYouOverweight)
@@ -546,5 +550,422 @@ letters, numbers, $, _
 //   console.log('Это день недели которого я не знаю :(')
 
 //}
-////
-////
+
+/** Statements & Expressions */
+// Expressions это вырожение
+//Statements это тоже выражение
+
+// Statements
+// const number = 10
+//
+// if(number > 0){
+//  const text = 'The number is positive'
+// }
+// console.log(`${number - 2} is also positive number.`)
+
+/** Тернараный оператор */
+// const money = 1000
+// const cost = 1
+// money >= cost ? console.log('You can buy it.') : console.log('You can not buy it.')
+// const canYouBuyIt = money >= cost ? 'You can buy it.' : 'You can not buy it.'
+// console.log(canYouBuyIt)
+
+//Пример if else statements
+// let canYouBuyIt1
+// if (money >= cost){
+//  canYouBuyIt1 = 'You can buy it.'
+// }else {
+// canYouBuyIt1 =  'You can not buy it.'
+// }
+// console.log(canYouBuyIt1)
+
+//Тернарный оператор
+// console.log(`You can${money >= cost ? ' ' : ' not'} buy it.`)
+
+// let firstCheck = false,
+//   secondCheck = false,
+//   access = firstCheck ? "Доступ запрещён" : secondCheck ? "Доступ запрещён" : "Доступ разрешён";
+//
+// console.log( access ); // выводит в консоль "Доступ разрешён"
+
+//Тернарный оператор задание!
+// const money = 19
+// const age = 18
+// age >= money ? console.log('You can not buy the alcohol!') : console.log('You can buy the alcohol!')
+//=============================================================
+// const age = prompt('Введите свой возраст')
+// const message = age >= 18 ? 'Вы можете купить алкоголь.' :
+//   'Вы не можете купить алкоголь, вы слишком молоды.'
+// console.log(message)
+// alert(message)
+
+/** Strict mode */
+//'use strict'- строгий режим, избегать случайных ошибок
+// 'use strict'
+//
+// let  hasCertificate = false
+// const passExam = true
+//
+// if(passExam) hasCertificate = true
+// if (hasCertificate) console.log('Wow!')
+//
+// const packAge = 'Video'
+
+/** Функции - это кусок кода для использование его многократно
+ * Don't Repeat Yourself DRY*/
+//  function printTex() {
+//   console.log('Hello to everyone!')
+// }
+// printTex()
+// printTex()
+// printTex()
+// Number('42')
+// const number = Number('42')
+// console.log(number)
+//==============================================
+// function colorizer (item, color, colorCode) {
+//  // console.log(item, color)
+//  const colorizedItem = `The ${item} is ${color}. The code of the color is ${colorCode}!`
+//  // console.log(colorizedItem)
+//  return colorizedItem
+// }
+// const messageFromColorize = colorizer('desk' , 'red', 99)
+// console.log(`We have the following message: ${messageFromColorize}`)
+//
+// const messageFromColorize2 = colorizer('hand' , 'green', 10)
+// console.log(`We have the following message: ${messageFromColorize2}`)
+
+/** Функция Declarations vs Expressions разница  */
+//Declarations
+// function getAge1(birthYear, yearNow){
+//  // const age = yearNow - birthYear
+//  return yearNow - birthYear
+// }
+// const myAge1 = getAge1(1997,2022)
+// console.log(myAge1)
+//
+// //Expressions
+// const getAge2 = function (birthYear, yearNow){
+//  return yearNow - birthYear
+// }
+// const myAge2 = getAge2(1997,2022)
+// console.log(myAge2)
+
+/** Стрелочные функции arrow function */
+// const getAge2 = function (birthYear, yearNow){
+//  return yearNow - birthYear
+// }
+// const myAge2 = getAge2(1997,2022)
+// console.log(myAge2)
+
+//Пример стрелочной функции
+// const getAge3 = (birthYear, yearNow) =>  yearNow - birthYear
+// const myAge3 = getAge3(1948, 2022)
+// console.log(myAge3)
+//
+// const canBuyAlcohol = (birthYear, yearNow) => {
+//  const age = yearNow - birthYear
+//  const isPersonOlderThan21 = age >= 21 ? true : false
+//  return isPersonOlderThan21
+// }
+// console.log(canBuyAlcohol(2007, 2022))
+
+/** Вызов функции внутри другой функции */
+// function colorMixer(color1, color2){
+//  const newColor = `${color1} + ${color2}.`
+//  return newColor
+// }
+//
+// function colorizer (item, color1, color2) {
+//  const color = colorMixer(color1, color2)
+//  const colorizedItem = `The ${item} is ${color}`
+//  // console.log(colorizedItem)
+//  return colorizedItem
+// }
+// const colorizedCar = colorizer('car', 'red', 'orange')
+// console.log(colorizedCar)
+//
+// console.log(colorizer('house', 'brown', 'black'))
+
+/** Задача */
+ // const getAverage = (x, y , z) => (x + y + z) /3
+
+// console.log(getAverage(1,2,3))
+
+//The first quarter
+
+// const dept1AverSales1 = getAverage(35467, 29842, 38501)
+// const dept1AverSales2 = getAverage(70533, 50121, 33899)
+// console.log(dept1AverSales1, dept1AverSales2)
+
+// The second quarter
+// const dept2AverSales1 = getAverage(50301, 21984, 19207)
+// const dept2AverSales2 = getAverage(72381, 41562, 29465)
+// console.log(dept2AverSales1, dept2AverSales2)
+//
+// const printBonus = function (dept2AverSales1, dept1AverSales2){
+//   if(dept2AverSales1 > dept2AverSales2){
+//    const diff = dept1AverSales - dept2AverSales
+//    const percent = diff / dept2AverSales * 100
+//    if(percent >= 30){
+//     console.log(`Dept 1 will get a bonus of ${percent}%`)
+//    }else {
+//     console.log('No bonus in this quarter')
+//    }
+//   }
+// }
+
+/** Массивы */
+// const color1 = 'red'
+// const color2 = 'orange'
+// const color3 = 'yellow'
+// const color4 = 'green'
+// const color5 = 'blue'
+// const color6 = 'indigo'
+// const color7 = 'violet'
+//
+// const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+// console.log(rainbowColors[2])
+// console.log('The sky is ' + rainbowColors[4])
+// rainbowColors[rainbowColors.length] = 'indigo'
+//
+// rainbowColors[5] = 'Dark blue'
+//
+// console.log(rainbowColors)
+//
+// console.log(rainbowColors)
+// // const stringNumbers = []
+// // stringNumbers[0] = 'one'
+// // stringNumbers[1] = 'two'
+// // stringNumbers[2] = 'three'
+// const stringNumbers = new Array('one', 'two', 'three')
+// console.log(stringNumbers)
+//
+// const numbers = [43, 42, 54, 65]
+// console.log(numbers)
+//
+// const anyItems = [4, true, new Date(), 'something']
+// console.log(anyItems)
+
+/** Массив методы */
+// const numbers = [23, 54, 4, 31, 11]
+// let result
+
+// result = numbers.length //Опеределяем длинну массива
+//
+// result = Array.isArray(numbers) //Узнаем является ли массивом
+//
+// result = numbers.indexOf(4) //Получем индекс массива
+//
+// //push() pop() метод добавляет элемент в конце массива
+// result = numbers.push(7) //метод добавляет элемент в конце массива
+// result = numbers.pop()//Убирает последний элемент в массиве
+// result = numbers.pop()
+
+//unshift()  shift() метод добавляют и удаляют элементы в начале массива
+// result = numbers.unshift(3) //Добавляет элемент в начало
+// result = numbers.shift()//Без парамтеров и удаляет первый элемент 3
+//
+// result = numbers.push(1, 22, 33)
+// result = numbers.unshift(1, 22, 33)
+// result = numbers.splice(1, 1) //метод сплайс означает срашивание удаляет несколько элементов указываем индекс
+// result = numbers.splice(1, 3)
+//
+// result = numbers.reverse() //С этим методом можем развернуть массивы в обратном порядке
+//
+// result = numbers.slice(1, 4)
+// result = numbers.concat(result)
+//
+//
+//
+// console.log(result)
+// console.log(numbers)
+
+//Задание
+// const calculateTips = bill => bill < 20 ?  bill * 0.2 : bill * 0.15
+//
+// const bills = [11, 20, 47]
+// const tips = [calculateTips(bills[0]), calculateTips(bills[1]), calculateTips(bills[2])]
+// const totalBills = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+// console.log(bills, tips, totalBills)
+
+/** Объекты */
+// myData = ['Avtan', 'Tursunbekov', 1997, 'Progamming', ['Chynara, Tamina']]
+// console.log(myData[4])
+//
+// avtanObject = {
+//  name: 'Avtan',
+//  lastName: 'Tursunbekov',
+//  birthYear: 1997,
+//  job: 'Progaramming',
+//  familyMembers: ['Chynara', 'Tamina']
+// }
+// /** Dot vs bracket Notation объекты обращения к данным */
+// myData = [
+//   'Avtandil',
+//   'Tursunbekov',
+//   1997,
+//   'Programmer',
+//   ['Chynara']
+// ]
+// console.log(myData)
+//
+// avtandilObject = {
+//   name: 'Avtandil',
+//   lastName: 'Tursunbekov',
+//   birthYear: 1997,
+//   job: 'Programmer',
+//   familyMembers: ['Chynara', 'Tamina', 'Avtandil ']
+// }
+// console.log(avtandilObject)
+// console.log(avtandilObject.name)
+// console.log(avtandilObject['name'])
+//
+// const baseName = 'name'
+// console.log(avtandilObject['last' + baseName])
+
+// const userInput = prompt('What do you want to know about Avtandil? ' +
+//   'Choose between name, lastname, birthYear, job,' +
+//   ' familyMembers ')
+// if(avtandilObject[userInput]){
+//   console.log(avtandilObject[userInput])
+// }else {
+//   console.log('This property does not exist! Choose between name, lastname, birthYear, job, familyMembers')
+// }
+
+//=====================================================
+// console.log(`${avtandilObject.name} has ${avtandilObject.familyMembers.length} family members  and the first one is
+// ${avtandilObject.familyMembers[0]}`)
+
+/** Объекты задание bmi index */
+// const jack = {
+//   firstName: 'Jack',
+//   lastName: 'White',
+//   weight: 91,
+//   height: 1.93,
+//   calcBmi: function (){
+//     this.bmi = this.weight / this.height ** 2
+//     return this.bmi
+//   }
+// }
+//
+// const mike = {
+//   firstName: 'Mike',
+//   lastName: 'Black',
+//   weight: 91,
+//   height: 1.93,
+//   calcBmi: function (){
+//     this.bmi = this.weight / this.height ** 2
+//     return this.bmi
+//   }
+// }
+//
+// console.log(jack.calcBmi())
+// console.log(jack.bmi)
+//
+// console.log(mike.calcBmi())
+// console.log(mike.bmi)
+//
+//
+// if (jack.bmi > mike.bmi) {
+//   console.log(`${jack.firstName} ${jack.lastName} BMI (${jack.bmi}) is higer than
+//   ${mike.firstName} ${mike.lastName} (${mike.bmi})!`)
+// }else if (jack.bmi < mike.bmi) {
+//   console.log(`${mike.firstName} ${mike.lastName} BMI (${mike.bmi}) is higer than
+//   ${jack.firstName} ${jack.lastName} (${jack.bmi})!`)
+// } else {
+//   console.log(`${mike.firstName} ${mike.lastName} and ${jack.firstName} ${jack.lastName} BMI are equal (${mike.bmi})!`)
+// }
+
+/** For циклы */
+// console.log('Push ups repetition 1')
+// console.log('Push ups repetition 2')
+// console.log('Push ups repetition 3')
+// console.log('Push ups repetition 4')
+// console.log('Push ups repetition 5')
+// console.log('Push ups repetition 6')
+// console.log('Push ups repetition 7')
+// console.log('Push ups repetition 8')
+// console.log('Push ups repetition 9')
+// console.log('Push ups repetition 10')
+
+// for (let rep = 1; rep <= 10; rep = rep += 1) {
+//   console.log(`Push ups repetition ${rep}`)
+//   console.log('Hello!')
+// }
+//
+// console.log('Out of loop')
+
+/** Итерация массива*/
+// const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
+//
+// const types = []
+//
+//
+// for (let i = 0; i < user123.length; i++ ){
+//   console.log(user123[i], typeof user123[i])
+//   // types[i] = typeof user123[i]
+//   // types.push(typeof user123[i])
+//   // types.unshift(typeof user123[i])
+// }
+// console.log(types)
+//===========================================
+// const birthYears = [1948, 1952]
+// const ages = []
+//
+// for(let i = 0; i < birthYears.length; i++){
+//   ages.push(2022 - birthYears[i])
+// }
+// console.log(ages)
+/** Continue and Break - продолжить и прервать */
+
+const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
+
+// for (let i = 0; i < user123.length; i++ ){
+//   if(typeof user123[i] !== 'string') continue
+//   console.log(user123[i], typeof user123[i])
+// }
+
+// for (const user of user123) {
+//   if(typeof user !== 'string') continue
+//   console.log(user, typeof user)
+// }
+user123.forEach(user => console.log(user, typeof user))
+
+// for (let i = 0; i < user123.length; i++ ){
+//   if(typeof user123[i] === 'number') break
+//   console.log(user123[i], typeof user123[i])
+// }
+
+/** Итерация в обратном порядке */
+
+// console.log('BACKWARDS ITERATION')
+//
+// const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay']]
+//
+// for(let i = user123.length - 1; i >= 0; i--){
+//   console.log(i,user123[i])
+// }
+//
+// console.log('LOOP IN LOOP')
+//
+// for (let exercise = 1; exercise <= 3; exercise++){
+//   console.log(`Exercise ${exercise}`)
+//
+//   for (let rep= 1; rep <= 5; rep++){
+//     console.log(`Rep ${rep}`)
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
