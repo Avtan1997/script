@@ -896,6 +896,8 @@ letters, numbers, $, _
 //
 // console.log('Out of loop')
 
+
+
 /** Итерация массива*/
 // const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
 //
@@ -919,7 +921,7 @@ letters, numbers, $, _
 // console.log(ages)
 /** Continue and Break - продолжить и прервать */
 
-const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
+// const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
 
 // for (let i = 0; i < user123.length; i++ ){
 //   if(typeof user123[i] !== 'string') continue
@@ -930,7 +932,7 @@ const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Tele
 //   if(typeof user !== 'string') continue
 //   console.log(user, typeof user)
 // }
-user123.forEach(user => console.log(user, typeof user))
+// user123.forEach(user => console.log(user, typeof user))
 
 // for (let i = 0; i < user123.length; i++ ){
 //   if(typeof user123[i] === 'number') break
@@ -939,23 +941,29 @@ user123.forEach(user => console.log(user, typeof user))
 
 /** Итерация в обратном порядке */
 
-console.log('BACKWARDS ITERATION')
+// console.log('BACKWARDS ITERATION')
+//
+// const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay']]
+//
+// for(let i = user123.length - 1; i >= 0; i--){
+//   console.log(i,user123[i])
+// }
+//
+// console.log('LOOP IN LOOP')
+//
+// for (let exercise = 1; exercise <= 3; exercise++){
+//   console.log(`Exercise ${exercise}`)
+//
+//   for (let rep= 1; rep <= 5; rep++){
+//     console.log(`Rep ${rep}`)
+//   }
+// }
 
-const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay']]
 
-for(let i = user123.length - 1; i >= 0; i--){
-  console.log(i,user123[i])
-}
 
-console.log('LOOP IN LOOP')
 
-for (let exercise = 1; exercise <= 3; exercise++){
-  console.log(`Exercise ${exercise}`)
 
-  for (let rep= 1; rep <= 5; rep++){
-    console.log(`Rep ${rep}`)
-  }
-}
+
 
 
 
