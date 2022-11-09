@@ -958,6 +958,21 @@ letters, numbers, $, _
 //     console.log(`Rep ${rep}`)
 //   }
 // }
+// let name = 'Jack';
+// console.log(name)
+// name = 'Jane'
+// console.log(name)
+// let color
+// console.log(color)
+// color = 'Red'
+// console.log(color)
+
+// const name = 'Jack'
+// console.log(name)
+// name = 'Jane'
+//
+// const color = 'Red'
+
 
 
 
