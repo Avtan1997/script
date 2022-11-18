@@ -973,6 +973,17 @@ letters, numbers, $, _
 //
 // const color = 'Red'
 
+// let x = 'something'
+// console.log(x)
+// x = 3
+// console.log(x)
+
+//Primitive data types
+
+//String
+
+let someText
+console.log(typeof someText)
 
 
 
