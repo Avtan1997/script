@@ -1030,15 +1030,45 @@ letters, numbers, $, _
 // myCity.country = 'USA'
 // console.log(myCity)
 
-const myCity = {
- city: 'Bishkek'
-}
-console.log(myCity)
+// const myCity = {
+//  city: 'Bishkek'
+// }
+// console.log(myCity)
+//
+// myCity.popular = true
+// console.log(myCity)
+// myCity.country = 'Kyrgyzstan'
+// console.log(myCity)
+//
+// delete myCity.city
+// console.log(myCity)
+// delete  myCity.popular
+// console.log(myCity)
+// myCity['city2'] = 'Talas'
+// console.log(myCity)
 
-myCity.popular = true
-console.log(myCity)
-myCity.country = 'Kyrgyzstan'
-console.log(myCity)
+// const myCity = {
+//  city: 'Bishkek',
+//  info: {
+//   isPopular: true,
+//   country: 'Kyrgyzstan'
+//  }
+// }
+// console.log(myCity.info.country)
+//
+// delete myCity.info.isPopular
+// console.log(myCity)
+
+const name = 'Avtan'
+const postQty = 23
+
+const userProfile = {
+ name,
+ postQty,
+ hasSignedAgreement: false
+}
+console.log(userProfile)
+
 
 
 
