@@ -1013,14 +1013,24 @@ letters, numbers, $, _
 //
 // console.log(lastCopy)
 
-const a = () => {
- console.log('Hey there')
+// const a = () => {
+//  console.log('Hey there')
+// }
+// a()
+//
+// a = 10
+//
+// a()
+
+const myCity = {
+ city: 'New York'
 }
-a()
+myCity.popular = true
+// console.log(myCity)
+myCity.country = 'USA'
+console.log(myCity)
 
-a = 10
 
-a()
 
 
 
