@@ -982,8 +982,24 @@ letters, numbers, $, _
 
 //String
 
-let someText
-console.log(typeof someText)
+// let someText
+// console.log(typeof someText)
+// let age = 25
+// let name = 'Avtandil'
+// console.log(age, name)
+// age = 26
+// console.log(age, name)
+let myName
+
+console.log(myName)
+
+myName = 'Avtan'
+
+console.log(myName)
+console
+
+
+
 
 
 
