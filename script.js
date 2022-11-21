@@ -1013,15 +1013,15 @@ letters, numbers, $, _
 //
 // console.log(lastCopy)
 
-function a() {
+const a = () => {
  console.log('Hey there')
 }
-
 a()
 
 a = 10
 
 a()
+
 
 
 
