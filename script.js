@@ -989,14 +989,29 @@ letters, numbers, $, _
 // console.log(age, name)
 // age = 26
 // console.log(age, name)
-let myName
 
-console.log(myName)
+// const objectA = {
+//  a: 10,
+//  b: true
+// }
+// // console.log(objectA)
+//
+// const copyOfA = objectA
+// copyOfA.c = 'abc'
+// copyOfA.d = undefined
+// console.log(copyOfA)
 
-myName = 'Avtan'
+const nameCopy = {
+ a: 25,
+ b: 'Tursunbekov'
+}
+console.log(nameCopy)
 
-console.log(myName)
-console
+const lastCopy = nameCopy
+lastCopy.c = 'Avtandil'
+lastCopy.d = 'man'
+
+console.log(lastCopy)
 
 
 
