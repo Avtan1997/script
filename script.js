@@ -1022,12 +1022,22 @@ letters, numbers, $, _
 //
 // a()
 
-const myCity = {
- city: 'New York'
-}
-myCity.popular = true
+// const myCity = {
+//  city: 'New York'
+// }
+// myCity.popular = true
+// // console.log(myCity)
+// myCity.country = 'USA'
 // console.log(myCity)
-myCity.country = 'USA'
+
+const myCity = {
+ city: 'Bishkek'
+}
+console.log(myCity)
+
+myCity.popular = true
+console.log(myCity)
+myCity.country = 'Kyrgyzstan'
 console.log(myCity)
 
 
