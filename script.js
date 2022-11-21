@@ -1001,19 +1001,29 @@ letters, numbers, $, _
 // copyOfA.d = undefined
 // console.log(copyOfA)
 
-const nameCopy = {
- a: 25,
- b: 'Tursunbekov'
+// const nameCopy = {
+//  a: 25,
+//  b: 'Tursunbekov'
+// }
+// console.log(nameCopy)
+//
+// const lastCopy = nameCopy
+// lastCopy.c = 'Avtandil'
+// lastCopy.d = 'man'
+//
+// console.log(lastCopy)
+
+function a() {
+ console.log('Hey there')
 }
-console.log(nameCopy)
 
-const lastCopy = nameCopy
-lastCopy.c = 'Avtandil'
-lastCopy.d = 'man'
+a()
 
-console.log(lastCopy)
+a = 10
 
-dfu
+a()
+
+
 
 
 
