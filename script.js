@@ -1059,15 +1059,24 @@ letters, numbers, $, _
 // delete myCity.info.isPopular
 // console.log(myCity)
 
-const name = 'Avtan'
-const postQty = 23
+// const name = 'Avtan'
+// const postQty = 23
+//
+// const userProfile = {
+//  name,
+//  postQty,
+//  hasSignedAgreement: false
+// }
+// console.log(userProfile)
 
-const userProfile = {
- name,
- postQty,
- hasSignedAgreement: false
+const myCity = {
+ city: 'Bishkek',
+ cityGreeting: function (){
+  console.log('Greetings!!')
+ }
 }
-console.log(userProfile)
+
+myCity.cityGreeting()
 
 
 
