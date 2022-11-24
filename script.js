@@ -896,6 +896,8 @@ letters, numbers, $, _
 //
 // console.log('Out of loop')
 
+
+
 /** Итерация массива*/
 // const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
 //
@@ -919,7 +921,7 @@ letters, numbers, $, _
 // console.log(ages)
 /** Continue and Break - продолжить и прервать */
 
-const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
+// const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay'], false]
 
 // for (let i = 0; i < user123.length; i++ ){
 //   if(typeof user123[i] !== 'string') continue
@@ -930,7 +932,7 @@ const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Tele
 //   if(typeof user !== 'string') continue
 //   console.log(user, typeof user)
 // }
-user123.forEach(user => console.log(user, typeof user))
+// user123.forEach(user => console.log(user, typeof user))
 
 // for (let i = 0; i < user123.length; i++ ){
 //   if(typeof user123[i] === 'number') break
@@ -939,23 +941,155 @@ user123.forEach(user => console.log(user, typeof user))
 
 /** Итерация в обратном порядке */
 
-console.log('BACKWARDS ITERATION')
+// console.log('BACKWARDS ITERATION')
+//
+// const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay']]
+//
+// for(let i = user123.length - 1; i >= 0; i--){
+//   console.log(i,user123[i])
+// }
+//
+// console.log('LOOP IN LOOP')
+//
+// for (let exercise = 1; exercise <= 3; exercise++){
+//   console.log(`Exercise ${exercise}`)
+//
+//   for (let rep= 1; rep <= 5; rep++){
+//     console.log(`Rep ${rep}`)
+//   }
+// }
+// let name = 'Jack';
+// console.log(name)
+// name = 'Jane'
+// console.log(name)
+// let color
+// console.log(color)
+// color = 'Red'
+// console.log(color)
 
-const user123 = ['Avtandil', 'Tursunbekov', 1997, 'developer', ['Chynara', 'Telegay']]
+// const name = 'Jack'
+// console.log(name)
+// name = 'Jane'
+//
+// const color = 'Red'
 
-for(let i = user123.length - 1; i >= 0; i--){
-  console.log(i,user123[i])
+// let x = 'something'
+// console.log(x)
+// x = 3
+// console.log(x)
+
+//Primitive data types
+
+//String
+
+// let someText
+// console.log(typeof someText)
+// let age = 25
+// let name = 'Avtandil'
+// console.log(age, name)
+// age = 26
+// console.log(age, name)
+
+// const objectA = {
+//  a: 10,
+//  b: true
+// }
+// // console.log(objectA)
+//
+// const copyOfA = objectA
+// copyOfA.c = 'abc'
+// copyOfA.d = undefined
+// console.log(copyOfA)
+
+// const nameCopy = {
+//  a: 25,
+//  b: 'Tursunbekov'
+// }
+// console.log(nameCopy)
+//
+// const lastCopy = nameCopy
+// lastCopy.c = 'Avtandil'
+// lastCopy.d = 'man'
+//
+// console.log(lastCopy)
+
+// const a = () => {
+//  console.log('Hey there')
+// }
+// a()
+//
+// a = 10
+//
+// a()
+
+// const myCity = {
+//  city: 'New York'
+// }
+// myCity.popular = true
+// // console.log(myCity)
+// myCity.country = 'USA'
+// console.log(myCity)
+
+// const myCity = {
+//  city: 'Bishkek'
+// }
+// console.log(myCity)
+//
+// myCity.popular = true
+// console.log(myCity)
+// myCity.country = 'Kyrgyzstan'
+// console.log(myCity)
+//
+// delete myCity.city
+// console.log(myCity)
+// delete  myCity.popular
+// console.log(myCity)
+// myCity['city2'] = 'Talas'
+// console.log(myCity)
+
+// const myCity = {
+//  city: 'Bishkek',
+//  info: {
+//   isPopular: true,
+//   country: 'Kyrgyzstan'
+//  }
+// }
+// console.log(myCity.info.country)
+//
+// delete myCity.info.isPopular
+// console.log(myCity)
+
+// const name = 'Avtan'
+// const postQty = 23
+//
+// const userProfile = {
+//  name,
+//  postQty,
+//  hasSignedAgreement: false
+// }
+// console.log(userProfile)
+
+const myCity = {
+ city: 'Bishkek',
+ cityGreeting: function (){
+  console.log('Greetings!!')
+ }
 }
 
-console.log('LOOP IN LOOP')
+myCity.cityGreeting()
 
-for (let exercise = 1; exercise <= 3; exercise++){
-  console.log(`Exercise ${exercise}`)
 
-  for (let rep= 1; rep <= 5; rep++){
-    console.log(`Rep ${rep}`)
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
