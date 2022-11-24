@@ -1069,15 +1069,42 @@ letters, numbers, $, _
 // }
 // console.log(userProfile)
 
-const myCity = {
- city: 'Bishkek',
- cityGreeting: function (){
-  console.log('Greetings!!')
- }
-}
+// const myCity = {
+//  city: 'Bishkek',
+//  cityGreeting: function (){
+//   console.log('Greetings!!')
+//  }
+// }
+//
+// myCity.cityGreeting()
 
-myCity.cityGreeting()
+// const myCity = {
+//  city: 'New York',
+//  cityGreeting() {
+//   console.log('Greetings!!!')
+//  }
+// }
+// myCity.cityGreeting()
+//
+// myCity.city2 = {
+//  town: 'Bishkek',
+//  town2: 'Almata'
+// }
+// // console.log(myCity)
+// myCity.cityGreeting()
+// console.log(myCity)
 
+
+// const post = {
+//  title: 'My post',
+//  likesQty:5
+// }
+// JSON.stringify(post)
+// console.log(post)
+//
+// const postString = JSON.stringify(post)
+// JSON.parse(postString)
+// console.log(post)
 
 
 
