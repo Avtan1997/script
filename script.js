@@ -1108,13 +1108,152 @@ letters, numbers, $, _
 
 
 
+// const a = 10
+// let b = a
+// b = 30
+// console.log(b)
+// console.log(a)
 
+const person = {
+ name: 'Bob',
+ age: 25,
+}
+// const person2 = person
+// person2.age = 26
+// person2.isAdult = true
+//
+// console.log(person.age)
+// console.log(person.isAdult)
+// console.log(person)
 
+// const person2 = Object.assign({}, person)
+// person2.age = 26
+//
+// console.log(person2)
+// console.log(person.age)
 
+// const person2 = {...person}
+// person2.name = 'Alice'
+//
+// console.log(person2.name)
+// console.log(person.name)
 
+// let a = 5
+// let b = 3
+//
+// function sum(a, b) {
+//  const c = a + b
+//  console.log(c)
+// }
+// sum(a, b)
+//
+// a = 8
+// b = 12
+//
+// sum(a, b)
 
+// function myFn(a, b) {
+//  let c
+//  a = a + 1
+//  c = a + b
+//  return c
+// }
+// myFn(10, 3)
 
+// function myFn() {}
+//
+// console.log(myFn());
 
+// const personOne = {
+//  name: 'Beka',
+//  age: 18
+// }
+// function increasePersonAge(person) {
+//  person.age += 1
+//  return person
+// }
+//
+// increasePersonAge(personOne)
+// console.log(personOne.age)
+
+// const personOne = {
+//  name: 'Beka',
+//  age: 22
+// }
+//
+// function increasePersonAge(person) {
+//  const updatePerson = Object.assign({}, person)
+//  updatePerson.age += 1
+//  return updatePerson
+// }
+//
+// const updatePersonOne = increasePersonAge(personOne)
+// console.log(personOne.age)
+// console.log(updatePersonOne.age)
+
+// function printMyName() {
+//  console.log('Avtan')
+// }
+//
+// console.log('Start')
+//
+// setTimeout(printMyName, 2000)
+
+// let a
+// let b
+//
+// function myFn() {
+//  let b
+//  a = true
+//  b = 10
+//  console.log(b)
+// }
+//
+// myFn()
+//
+// console.log(a)
+// console.log(b)
+
+// const a = 5
+//
+// function myFn() {
+//  function innerFn(){
+//   console.log(a)
+//  }
+//  innerFn()
+// }
+// myFn()
+
+// let a
+// let b
+//
+// function myFn() {
+//  let a
+//  let b
+//  a = true
+//  b = 10
+//  console.log(b)
+// }
+// myFn()
+//
+// console.log(a)
+// console.log(b)
+
+// const lastName = 'Tursunbekov'
+// const name = 'Avtandil'
+// const age = 25
+// const mainName = lastName + name + age
+// console.log(mainName)
+
+function myFn(lastName, name, age) {
+ lastName = 'Tursunbekov '
+ name = 'Avtandil '
+ age = 25
+ myFn2 = lastName + name + age
+return myFn2
+}
+
+console.log(myFn());
 
 
 
