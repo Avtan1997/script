@@ -1114,9 +1114,9 @@ letters, numbers, $, _
 // console.log(b)
 // console.log(a)
 
-const person = {
- name: 'Bob',
- age: 25,
+// const person = {
+//  name: 'Bob',
+//  age: 25,
 }
 // const person2 = person
 // person2.age = 26
@@ -1245,15 +1245,13 @@ const person = {
 // const mainName = lastName + name + age
 // console.log(mainName)
 
-function myFn(lastName, name, age) {
- lastName = 'Tursunbekov '
- name = 'Avtandil '
- age = 25
- myFn2 = lastName + name + age
-return myFn2
-}
+// function myFn(lastName, name, age) {
+//  myFn2 = lastName + name + age
+// console.log(myFn2)
+// }
+//
+// myFn('Shaabeko', 'Beka ', 18)
 
-console.log(myFn());
 
 
 
