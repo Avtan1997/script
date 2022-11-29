@@ -1,18 +1,4 @@
-// let name = 'Avtan'
-// console.log(name)
-// name = 'Chynara'
-// console.log(name)
-//
-// let color
-// console.log(color)
-// color = 'red'
-// console.log(color)
-
-/**************
- JavaScript names can include
-letters, numbers, $, _
- **************/
-
+{
 // const name = 'Avtan'
 // console.log(name)
 // // name = 'Chynara'
@@ -23,7 +9,7 @@ letters, numbers, $, _
 //   name: 'Avtan',
 //   gender: 'male',
 //   age: 25
-// }
+//
 // console.log(user)
 // user.name = 'Chynara'
 // user.gender = 'women'
@@ -1157,107 +1143,55 @@ letters, numbers, $, _
 //  a = a + 1
 //  c = a + b
 //  return c
-// }
-// myFn(10, 3)
 
-// function myFn() {}
+// console.log('Avtan')
+
+// let b = 10
+// b && console.log('Выполнено!')
 //
-// console.log(myFn());
+// let c
+// c && console.log('Выполнено!')
 
-// const personOne = {
-//  name: 'Beka',
-//  age: 18
-// }
-// function increasePersonAge(person) {
-//  person.age += 1
-//  return person
+// const button = {
+//  width: 200,
+//  text: 'Buy'
 // }
 //
-// increasePersonAge(personOne)
-// console.log(personOne.age)
-
-// const personOne = {
-//  name: 'Beka',
-//  age: 22
+// const redButton = {
+//  ...button,
+//  color: 'Red'
 // }
 //
-// function increasePersonAge(person) {
-//  const updatePerson = Object.assign({}, person)
-//  updatePerson.age += 1
-//  return updatePerson
+// console.table(redButton)
+
+// const buttonInfo = {
+//  text: 'Buy'
 // }
 //
-// const updatePersonOne = increasePersonAge(personOne)
-// console.log(personOne.age)
-// console.log(updatePersonOne.age)
-
-// function printMyName() {
-//  console.log('Avtan')
+// const buttonStyle = {
+//  color: 'yellow',
+//  width: 200,
+//  height: 300
 // }
 //
-// console.log('Start')
-//
-// setTimeout(printMyName, 2000)
-
-// let a
-// let b
-//
-// function myFn() {
-//  let b
-//  a = true
-//  b = 10
-//  console.log(b)
+// const button = {
+//  ...buttonInfo,
+//  ...buttonStyle
 // }
 //
-// myFn()
+// console.table(button)
+
+// const hello = 'Hello '
+// const world = 'World'
 //
-// console.log(a)
-// console.log(b)
+// const greeting = `${hello}${world}`
+// console.log(greeting)
 
-// const a = 5
-//
-// function myFn() {
-//  function innerFn(){
-//   console.log(a)
-//  }
-//  innerFn()
-// }
-// myFn()
+const name = 'Меня зовут Автандил,'
+const city = 'и живу в городе Бишкек!'
 
-// let a
-// let b
-//
-// function myFn() {
-//  let a
-//  let b
-//  a = true
-//  b = 10
-//  console.log(b)
-// }
-// myFn()
-//
-// console.log(a)
-// console.log(b)
-
-// const lastName = 'Tursunbekov'
-// const name = 'Avtandil'
-// const age = 25
-// const mainName = lastName + name + age
-// console.log(mainName)
-
-// function myFn(lastName, name, age) {
-//  myFn2 = lastName + name + age
-// console.log(myFn2)
-// }
-//
-// myFn('Shaabeko', 'Beka ', 18)
-
-
-
-
-
-
-
+const greeting = `${name} ${city}`
+console.log(greeting)
 
 
 
