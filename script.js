@@ -1187,11 +1187,11 @@
 // const greeting = `${hello}${world}`
 // console.log(greeting)
 
-const name = 'Меня зовут Автандил,'
-const city = 'и живу в городе Бишкек!'
-
-const greeting = `${name} ${city}`
-console.log(greeting)
+// const name = 'Меня зовут Автандил,'
+// const city = 'и живу в городе Бишкек!'
+//
+// const greeting = `${name} ${city}`
+// console.log(greeting)
 
 
 
